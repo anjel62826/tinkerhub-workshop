@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ELEPHANT.EXE</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+    <h1>🐘 ELEPHANT.EXE</h1>
+
+    <h2>Feed. Digest. Fart. Repeat.</h2>
+
+    <p>It's not just a file. It's a meal.</p>
+
+    <p>🐘 The elephant is currently hungry.</p>
+
+
+    <!-- Elephant -->
+
+    <div id="elephant">
+    <span id="elephantEmoji">🐘</span>
+    <span id="fart"></span>
+</div>
+
+
+    <!-- File Selection -->
+
+    <input type="file" id="fileInput">
+    <div id="mealCard">
+    <h3>🍽️ Current Meal</h3>
+
+    <p id="mealName">No meal selected</p>
+
+    <p id="mealType">🍴 Meal Type: Unknown</p>
+</div>
+
+
+    <!-- Feed Button -->
+
+    <button type="button" id="feedButton">
+        🍽️ Feed the Elephant
+    </button>
+
+
+    <!-- Status -->
+
+    <p id="status">
+        Waiting for food...
+    </p>
+
+
+    <!-- Hunger -->
+
+    <p id="hunger">
+        🍽️ Hunger: 100%
+    </p>
+    <button type="button" id="resetButton">
+    🔄 Give Elephant a New Life
+</button>
+
+
+    <!-- FPI -->
+
+    <div id="fpi"></div>
+
+
+    <!-- Fart-O-Meter -->
+
+    <div id="meterContainer">
+
+        <div id="meterBar"></div>
+
+    </div>
+
+
+    <p id="meterText">
+        💨 Fart-O-Meter: Waiting...
+    </p>
+
+
+    <!-- Fart -->
+
+    <div id="fart"></div>
+
+
+    <!-- Fart Counter -->
+
+    <p>
+        💨 Total Farts:
+        <span id="fartCount">0</span>
+    </p>
+
+
+    <!-- File Information -->
+
+    <div id="fileInfo"></div>
+
+
+    <!-- Poop -->
+
+    <div id="poop"></div>
+
+
+    <!-- Scientific Report -->
+
+    <div id="report"></div>
+
+
+    <!-- Achievement -->
+
+    <div id="achievement"></div>
+
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+
+</html>
